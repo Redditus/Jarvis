@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle do LED - Arduino</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #111;
+      color: white;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 20px;
+      padding: 15px 30px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Controle do LED via Navegador</h1>
+
+  <button onclick="conectar()">馃攲 Conectar Arduino</button><br><br>
+
+  <button onclick="ligar()">馃挕 Ligar LED</button>
+  <button onclick="desligar()">鉂� Desligar LED</button>
+
+<script>
+let porta;
+let writer;
+
+async function conectar() {
+  porta = await navigator.serial.requestPort();
+  await porta.open({ baudRate: 9600 });
+  writer = porta.writable.getWriter();
+  alert("Arduino conectado!");
+}
+
+async function ligar() {
+  const data = new TextEncoder().encode("1");
+  await writer.write(data);
+}
+
+async function desligar() {
+  const data = new TextEncoder().encode("0");
+  await writer.write(data);
+}
+</script>
+
+</body>
+</html>

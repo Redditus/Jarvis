@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ChatHTP</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    
+  </head>
+  <body onload="carregar()">
+    
+    <button onclick="conectar()" id="seleciona">selecionar</button>
+    
+ <video src="friday.mp4" id="video" autoplay muted id="video"></video>
+ 
+ <div id="estras">
+   
+
+   
+   
+<div class="status" id="batteryStatus"></div>
+</div>
+   
+
+
+
+
+
+    <div class="status" id="memoriaStatus"></div>
+
+
+<div class="status" id="redeStatus"></div>
+
+
+<div class="card" id="weather">
+  <span id="weatherInfo"></span>
+  
+  
+</div>
+
+<section id="google-search" style="display:none; height: 500px; margin-top: 20px;">
+  <iframe id="google-frame" style="width:100%; height:100%;" frameborder="0"></iframe>
+</section>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <div  class="chat" id="chat">
+ </div>
+ 
+ <div id="mensagem">
+   <input type="text" id="input"  class="input"  placeholder="Comandos" class="input"/>
+   
+   
+   
+   <button onclick="send()" id="button" class="fa-brands fa-telegram">></button>
+   
+   
+   
+ </div>
+ 
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+
+ 
+ 
+ 
+ <script src="send.js"></script>
+ 
+ 
+ 
+ 
+ 
+ 
+ <script src="main.js"></script>
+ 
+ 
+ 
+ 
+ 
+ <script src="voz.js"></script>
+ <script src="api.js"></script>
+  </body>
+</html>

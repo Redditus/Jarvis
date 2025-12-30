@@ -1,0 +1,78 @@
+body{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background: black;
+  color: white;
+ 
+  font-weight: 900;
+}
+video{
+  width: 100%;
+  height: 60vh;
+  margin-top: 3rem;
+}
+#tempo{
+  position: fixed;
+  top: 13vh;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  width: 10%;
+  font-size: 8rem;
+  text-shadow: 0 0.1rem 0.5rem  yellow;
+  margin-left: 7rem;
+  margin-right: 2rem;
+  animation: cor 2s ease-in-out infinite;
+}
+@keyframes cor{
+  0%{
+    text-shadow: 0 0.1rem 0.5rem  yellow;
+  }
+  50%{
+    text-shadow: 0 0.1rem 0.5rem  
+    darkred;
+  }
+  
+  100%{
+    text-shadow: 0 0.1rem 0.5rem  darkgrey;
+  }
+}
+
+
+#formario{
+  position: fixed;
+  top: 8rem;
+  width: 100%;
+}
+#formario span{
+  
+}
+#span{
+font-size: 3rem;
+}
+input{
+  width: 80%;
+  margin-top: 2rem;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+p{
+  text-decoration: none;
+color: white;
+}
+button{
+  width: 80%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  font-weight: 900;
+  
+}
